@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRedoAlt, faCheck } from '@fortawesome/free-solid-svg-icons'
 
 function Home () {
-  const url = localStorage.getItem('url') || "http://192.168.15.2:8000/live/chics.flv"
+  const url = localStorage.getItem('url') || "https://bstage.org:8000/live/chics.flv"
   const [inputValue, setInputValue] = useState(url)
 
   function handleChange (e) {
