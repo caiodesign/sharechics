@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 import * as S  from './styles'
 
-import { ReactFlvPlayer } from 'react-flv-player'
+import ReactPlayer from 'react-player'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRedoAlt, faCheck } from '@fortawesome/free-solid-svg-icons'
 
@@ -29,10 +29,10 @@ function Home () {
   return (
     <>
       <S.Header>
-        <h1>Sharehics</h1>
+        <h1>ShareChics</h1>
       </S.Header>
       <S.Container>
-        <ReactFlvPlayer url={url} />
+        <ReactPlayer url={url} playing={false} width="1920" height="1080" controls/>
         <S.FormField>
           <input onChange={handleChange} type="text" placeholder={inputValue} name="url" value={inputValue} />
         </S.FormField>

@@ -20,6 +20,8 @@ export const Header = styled.div`
 
 export const Container = styled.div`
   display: block;
+  text-align: center;
+
   @media(min-width: 800px) {
     padding: 0 12%;
   }
